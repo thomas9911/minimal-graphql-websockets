@@ -1,0 +1,11 @@
+version: "3"
+services: 
+  postgres:
+    container_name: postgres
+    image: postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=websocket_graphql_test_dev
+    ports:
+      - "5432:5432"

@@ -2,6 +2,8 @@ defmodule WebsocketGraphqlTestWeb.UserSocket do
   use Phoenix.Socket
   use Absinthe.Phoenix.Socket, schema: WebsocketGraphqlTestWeb.Schema
 
+  transport :websocket, Phoenix.Transports.WebSocket
+  
   ## Channels
   # channel "room:*", WebsocketGraphqlTestWeb.RoomChannel
 
